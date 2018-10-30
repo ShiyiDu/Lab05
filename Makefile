@@ -2,7 +2,7 @@ CC=gcc
 CFLAGS=-lWarn -pedantic
 
 tester: tester.o libmyifttt.a
-	cc tester.o -L. -lmyifttt -lcurl -o tester
+	cc tester.o -L. -lmyifttt -lcurl -lwiringPi -o tester
 
 irtester: irtester.o 
 	cc irtester.o -lwiringPi -o irtester
